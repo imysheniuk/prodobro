@@ -4,7 +4,8 @@ Documentation:
   Enabled: false
 AllCops:
   Exclude:
-    - 'bin/**/*'
-    
+    - 'bin/**/*'    
 Metrics/LineLength:
   Max: 100
+Style/FrozenStringLiteralComment:
+  Enabled: false
