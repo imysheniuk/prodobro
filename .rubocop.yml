@@ -4,8 +4,20 @@ Documentation:
   Enabled: false
 AllCops:
   Exclude:
-    - 'bin/**/*'    
+    - 'bin/**/*'
+    - 'vendor/**/*'
+    - 'db/schema.rb'
 Metrics/LineLength:
   Max: 100
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*'
+    - 'db/migrate/*'
+Metrics/AbcSize:
+  Exclude:
+    - 'db/migrate/*'
+Metrics/MethodLength:
+  Exclude:
+    - 'db/migrate/*'
 Style/FrozenStringLiteralComment:
   Enabled: false
