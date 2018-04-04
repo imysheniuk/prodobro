@@ -12,6 +12,7 @@ gem 'devise', '~> 4.4.3'
 gem 'devise-i18n'
 gem 'haml', '~> 5.0.0'
 gem 'jbuilder', '~> 2.5'
+gem 'jquery-rails', '~> 4.3.1'
 gem 'rails', '~> 5.1.5'
 gem 'rolify', '~> 5.2.0'
 gem 'sass-rails', '~> 5.0'
@@ -26,6 +27,7 @@ group :development, :test do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
   gem 'puma', '~> 3.7'
   gem 'rspec-rails', '~> 3.7.0'
+  gem 'rubocop-ci', git: 'https://github.com/ad2games/rubocop-ci'
   gem 'selenium-webdriver', '~> 3.11.0'
 end
 
