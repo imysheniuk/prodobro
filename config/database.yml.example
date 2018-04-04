@@ -13,8 +13,11 @@ development:
 test:
   <<: *default
   database: ProDobro_test
+  
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: utf8
   database: ProDobro_production
-  username: ProDobro
-  password: <%= ENV['PRODOBRO_DATABASE_PASSWORD'] %>
+  pool: 5
+  username:
+  password:
