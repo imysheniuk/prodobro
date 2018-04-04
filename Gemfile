@@ -9,7 +9,6 @@ gem 'bootstrap', '~> 4.0.0'
 gem 'cancancan'
 gem 'coffee-rails', '~> 4.2'
 gem 'devise'
-gem 'factory_bot'
 gem 'haml'
 gem 'jbuilder', '~> 2.5'
 gem 'mysql2', '>= 0.3.18', '< 0.5'
@@ -19,11 +18,11 @@ gem 'rolify'
 gem 'sass-rails', '~> 5.0'
 gem 'turbolinks', '~> 5'
 gem 'uglifier', '>= 1.3.0'
-gem 'unicorn-rails'
 
 group :development, :test do
   gem 'byebug', platforms: %i[mri mingw x64_mingw]
   gem 'capybara', '~> 2.13'
+  gem 'factory_bot'
   gem 'rspec-rails'
   gem 'selenium-webdriver'
 end
@@ -33,6 +32,10 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'web-console', '>= 3.3.0'
+end
+
+group :production do
+  gem 'unicorn'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
