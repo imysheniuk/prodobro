@@ -1,0 +1,44 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+
+body {
+  font-family: 'Audiowide', cursive;
+  font-size: 18px;
+}
+
+.navbar {
+  font-size: 16px;
+}
+
+.navbar-nav .open .dropdown-menu {
+  cursor: pointer;
+}
+
+.navbar-nav .open .dropdown-menu {
+  li:hover {
+    color: #9edce5;
+  }
+}
+
+#footer {
+  font-size: 16px;
+  height: 120px;
+  align-items: center;
+  display: flex;
+}
+ 
+@media (max-width: 767px) {
+  .navbar-nav .open .dropdown-menu {
+    background-color: white;
+    cursor: pointer;
+    margin-right: 15px;
+    font-size: 14px;
+  }
+
+  .navbar-nav .open .dropdown-menu {
+    li:hover {
+      color: #9edce5;
+    }
+  }
+}

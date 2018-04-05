@@ -1,0 +1,40 @@
+!!!
+%html
+  %head
+    %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
+    %title ProDobro
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{:href => "/images/hand.png", :rel => "shortcut icon", :type => "image/x-icon"}/
+    %link{:crossorigin => "anonymous", :href => "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", :integrity => "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", :rel => "stylesheet"}/
+    %link{:href => "https://blackrockdigital.github.io/startbootstrap-logo-nav/css/logo-nav.css", :rel => "stylesheet"}/
+
+%body
+  %nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+    .container
+      %a.navbar-brand{:href => "#"}
+        %img{:alt => "rss feed", :src => "/assets/prodobro2-9d9dcdf002f446dd3b77ccea0091ee1f75713ad69bdc8288e23a41834dfe29c2.png"}/
+      %button.navbar-toggler{"aria-controls" => "navbarResponsive", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarResponsive", "data-toggle" => "collapse", :type => "button"}
+        %span.navbar-toggler-icon
+      #navbarResponsive.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto
+          %li.nav-item.active
+            %a.nav-link{:href => "#"}
+              News
+              %span.sr-only (current)
+          %li.nav-item
+            %a.nav-link{:href => "#"} About Us
+          %li.nav-item
+            %a.nav-link{:href => "#"} Contacts
+          %li.nav-item.dropdown
+            %a#navbarDropdown.nav-link.dropdown-toggle{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", :href => "#", :role => "button"}
+              Compaigns
+            %ul.dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+              %li.dropdown-item{:href => "#"} Action
+              %li.dropdown-item{:href => "#"} Another action
+              %li.dropdown-item{:href => "#"} Something else here
+  = yield
+  %footer#footer.py-5.bg-dark
+    .container
+      %p.m-0.text-center.text-white Copyright ©ProDobro 2018
