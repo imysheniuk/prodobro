@@ -1,0 +1,12 @@
+.container
+  = form_with(model: @new, local: true) do |form|
+    .field.form-group
+      = form.label :Title
+      %br/
+      = form.text_field :title, autocomplete: "off" , class: "form-control"
+    .field.form-group
+      = form.label :Description
+      %br/
+      = form.text_area :description, autocomplete: "off" , class: "form-control"
+    %p
+      = form.submit
