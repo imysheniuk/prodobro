@@ -2,9 +2,10 @@
 @import "bootstrap";
 @import url('https://fonts.googleapis.com/css?family=Audiowide');
 
+$color-skyblue: #9edce5;
+
 body {
   font-family: 'Audiowide', cursive;
-  font-size: 18px;
 }
 
 .navbar {
@@ -13,11 +14,8 @@ body {
 
 .navbar-nav .open .dropdown-menu {
   cursor: pointer;
-}
-
-.navbar-nav .open .dropdown-menu {
   li:hover {
-    color: #9edce5;
+    color: $color-skyblue;
   }
 }
 
@@ -34,11 +32,8 @@ body {
     cursor: pointer;
     margin-right: 15px;
     font-size: 14px;
-  }
-
-  .navbar-nav .open .dropdown-menu {
     li:hover {
-      color: #9edce5;
+      color: $color-skyblue;
     }
   }
 }
