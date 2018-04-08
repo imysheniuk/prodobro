@@ -43,8 +43,8 @@ Rails.application.configure do
     port: 587,
     authentication: :plain,
     enable_starttls_auto: true,
-    user_name: 'prodobro111@gmail.com',
-    password: 'pro12345678'
+    user_name: ENV['GMAIL_USERNAME'],
+    password: ENV['GMAIL_PASSWORD']
   }
 
   config.active_record.dump_schema_after_migration = false
