@@ -1,0 +1,15 @@
+%div(style='margin: auto; width: 600px; border: 1px solid grey; border-radius: 5px; padding: 20px; text-align: center')
+
+  %div(style='display: block; margin-left: auto; margin-right: auto')
+    = image_tag 'prodobro1.png', style: 'width: 100px'
+    
+  %div(style='background-color: #335b66; padding: 20px')
+    %img(src='https://cdn2.iconfinder.com/data/icons/svg-business-icons/512/Ok-512.png' style='width: 50px; display: block; margin-left: auto; margin-right: auto')
+    %h2(style='color: white') Confirm your Email
+
+  %p(style='font-weight: bold; margin-top: 40px') Welcome #{@email} !
+
+  %p You can confirm your account email through the link below:
+
+  %button(style='background-color: #9edce5; padding: 15px; border: none; border-radius: 5px; margin: 15px')
+    = link_to 'Confirm my account', confirmation_url(@resource, confirmation_token: @token), style: 'color: black; text-decoration: none'
