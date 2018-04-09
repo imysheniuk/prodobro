@@ -1,0 +1,44 @@
+@import "bootstrap";
+
+.navbar-dark .navbar-nav .active>.nav-link:hover {
+  color: #0AB0C0;
+}
+
+#navbarDropdown:hover {
+  color: #0AB0C0;
+}
+
+.dropdown-menu a:hover {
+  background-color: #0AB0C0;
+}
+
+.page-footer {
+  color: #fff;
+}
+
+.list-unstyled p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.list-unstyled p a:hover {
+  color: #0AB0C0;
+}
+
+.row {
+  padding-top: 50px;
+}
+
+.page-footer h5 {
+  color: #9ea3aa;
+}
+
+.footer-copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-copyright a:hover {
+  color: #0AB0C0;
+  text-decoration: none;
+}

@@ -1,0 +1,69 @@
+!!!
+%html
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %title ProDobro
+    = csrf_meta_tags
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+    %link{href: "/images/hand.png", rel: "shortcut icon", type: "image/x-icon"}
+    %link{crossorigin: "anonymous", href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css", integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm", rel: "stylesheet"}
+    %script{crossorigin: "anonymous", defer: "defer", integrity: "sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl", src: "https://use.fontawesome.com/releases/v5.0.9/js/all.js"}
+  %body
+    %nav.navbar.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+      %a.navbar-brand{href: "#"}
+        %img{alt: "ProDobro", src: "/assets/prodobro2-9d9dcdf002f446dd3b77ccea0091ee1f75713ad69bdc8288e23a41834dfe29c2.png"}
+      %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarSupportedContent", "data-toggle" => "collapse", type: "button"}
+        %span.navbar-toggler-icon
+      #navbarSupportedContent.collapse.navbar-collapse
+        %ul.navbar-nav.ml-auto
+          %li.nav-item.active
+            %a.nav-link{href: "#"} News
+          %li.nav-item.active
+            %a.nav-link{href: "#"} About us
+          %li.nav-item.dropdown
+            %a#navbarDropdown.nav-link.dropdown-toggle.active{"aria-expanded" => "false", "aria-haspopup" => "true", "data-toggle" => "dropdown", href: "#", role: "button"}
+              Compaigns
+            .dropdown-menu{"aria-labelledby" => "navbarDropdown"}
+              %a.dropdown-item{href: "#"} Action
+              %a.dropdown-item{href: "#"} Another action
+              %a.dropdown-item{href: "#"} Something else here
+          %li.nav-item.active
+            %a.nav-link{href: "#"} Contacts
+    = yield
+    %footer.page-footer.font-small.bg-dark
+      .container.text-center.text-md-left
+        .row.my-4
+          .col-md-4.col-lg-3
+            %h5.text-uppercase.mb-4.font-weight-bold Our goal
+            %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum.
+          %hr.clearfix.w-100.d-md-none/
+          .col-md-2.col-lg-2.ml-auto
+            %h5.text-uppercase.mb-4.font-weight-bold LINKS
+            %ul.list-unstyled
+              %p
+                %a{href: "#!"} NEWS
+              %p
+                %a{href: "#!"} ABOUT US
+              %p
+                %a{href: "#!"} COMPAIGNS
+              %p
+                %a{href: "#!"} CONTACTS
+          %hr.clearfix.w-100.d-md-none/
+          .col-md-4.col-lg-3
+            %h5.text-uppercase.mb-4.font-weight-bold Address
+            %p
+              %i.fa.fa-home.mr-3
+              New York, NY 10012
+            %p
+              %i.fa.fa-envelope.mr-3
+              info@prodobro.com
+            %p
+              %i.fa.fa-phone.mr-3
+              + 01 234 567 88
+            %p
+              %i.fa.fa-print.mr-3
+              + 01 234 567 89
+      .footer-copyright.py-3.text-center
+        © 2018 Copyright:
+        %a{href: "#"} ProDobro.com
