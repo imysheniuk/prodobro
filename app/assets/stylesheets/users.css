@@ -9,11 +9,10 @@ a:hover {
 }
 
 .btn-outline-info {
-  border: 1px solid #17a2b8;
   padding: 5px 30px;
   margin-bottom: 10px;
 }
 
 .header {
-  margin-bottom: 25px;
+  margin: 25px 0;
 }
