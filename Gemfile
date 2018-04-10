@@ -11,6 +11,7 @@ gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.4.3'
 gem 'devise-i18n'
 gem 'haml', '~> 5.0.0'
+gem 'jquery-rails'
 gem 'jbuilder', '~> 2.5'
 gem 'rails', '~> 5.1.5'
 gem 'rolify', '~> 5.2.0'
@@ -43,3 +44,5 @@ group :production do
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]
+gem 'kaminari'
+gem 'rails-controller-testing'
