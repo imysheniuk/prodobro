@@ -24,13 +24,6 @@ RSpec.describe Campaign, type: :model do
     end
   end
 
-  context 'when title field includes numbers' do
-    it 'is invalid' do
-      campaign.title = 'Qw25edf45a'
-      expect(campaign).to_not be_valid
-    end
-  end
-
   context 'when description field is empty' do
     it 'is invalid' do
       campaign.description = ''
@@ -69,7 +62,7 @@ RSpec.describe Campaign, type: :model do
 
   context 'when needed amount field is too long' do
     it 'is invalid' do
-      campaign.needed_amount = '12345678'
+      campaign.needed_amount = '1234567890'
       expect(campaign).to_not be_valid
     end
   end
