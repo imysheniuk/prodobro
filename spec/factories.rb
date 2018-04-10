@@ -1,4 +1,14 @@
 FactoryBot.define do
+  factory :campaign do
+    title 'MyString'
+    description 'MyText'
+    status 'MyString'
+    current_amount 1
+    needed_amount 1
+    requisite 'MyString'
+    category_id 1
+    finished_at '2018-04-10 13:42:02'
+  end
   factory :user do
     name Faker::Name.first_name
     surname Faker::Name.last_name
