@@ -1,0 +1,20 @@
+!!!
+%html{lang: "en"}
+  %head
+    %meta{content: "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}
+    %meta{charset: "utf-8"}
+    %link{href: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css", rel: "stylesheet"}
+    %script{src: "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"}
+    %script{src: "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"}
+  %body
+    .container
+      %h1= @new.title
+      %hr
+      %p
+        Posted on #{@new.created_at}
+      %hr
+      %img.img-fluid.img-rounded{alt: "", src: "https://www.w3schools.com/w3images/lights.jpg"}
+      %hr
+      %p
+      %h2 Description:
+      = @new.description
