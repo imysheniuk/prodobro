@@ -7,7 +7,7 @@ FactoryBot.define do
     needed_amount 1
     requisite 'MyString'
     category_id 1
-    finished_at '2018-04-10 13:42:02'
+    finished_at Time.now
   end
   factory :user do
     name Faker::Name.first_name
