@@ -1,0 +1,13 @@
+language: ruby
+rvm:
+ - 2.5.0
+services:
+  - mysql
+before_install:
+  - gem install bundler
+  - mysql -e 'CREATE DATABASE ProDobro_test;'
+before_script:
+  - cp config/database.yml.example config/database.yml
+script:
+  - bundle exec rubocop -d
+  - bundle exec rspec

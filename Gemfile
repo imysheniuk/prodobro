@@ -26,6 +26,7 @@ group :development, :test do
   gem 'mysql2', '>= 0.3.18', '< 0.5'
   gem 'puma', '~> 3.7'
   gem 'rspec-rails', '~> 3.7.0'
+  gem 'rubocop-ci', git: 'https://github.com/ad2games/rubocop-ci'
   gem 'selenium-webdriver', '~> 3.11.0'
 end
 
