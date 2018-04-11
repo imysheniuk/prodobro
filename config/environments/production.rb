@@ -34,8 +34,7 @@ Rails.application.configure do
   config.action_mailer.raise_delivery_errors = true
   config.action_mailer.perform_deliveries = true
 
-  config.action_mailer.default_url_options =
-    { host: 'ec2-18-218-243-148.us-east-2.compute.amazonaws.com' }
+  config.action_mailer.default_url_options = { host: ENV['HOST_NAME'] }
 
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {

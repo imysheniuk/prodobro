@@ -2,7 +2,7 @@
   .row.justify-content-center
     .col-md-4
 
-      %h2.text-center.header Forgot your password?
+      %h2.text-center.header= t('.forgot_your_password')
 
       = form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f|
         = devise_error_messages!
@@ -13,6 +13,6 @@
           = f.email_field :email, autofocus: true, autocomplete: 'email' , class: 'form-control'
 
         .actions
-          = f.submit 'Send me reset password instructions', class: 'btn btn-outline-info'
+          = f.submit t('.send_me_reset_password_instructions'), class: 'btn btn-outline-info'
 
       = render 'devise/shared/links'
